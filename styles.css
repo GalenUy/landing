@@ -1,0 +1,281 @@
+:root {
+  --bg: #f5f8fa;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #ffffff;
+  --text: #173042;
+  --muted: #5f7684;
+  --line: rgba(23, 48, 66, 0.12);
+  --brand: #173042;
+  --accent: #d6a64f;
+  --mint: #d5eee5;
+  --shadow: 0 22px 60px rgba(20, 44, 61, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(214, 166, 79, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(68, 132, 126, 0.16), transparent 26%),
+    linear-gradient(180deg, #f8fbfc 0%, #eef4f6 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
+.hero {
+  padding: 8px 0 40px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand img,
+.footer-logo {
+  width: 132px;
+}
+
+.topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 36px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.eyebrow,
+.feature-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(23, 48, 66, 0.08);
+  color: #557788;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.hero-copy h1,
+.feature-copy h2,
+.care-mode-copy h2 {
+  margin: 16px 0 14px;
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
+
+.hero-copy h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  max-width: 10ch;
+}
+
+.hero-text,
+.feature-copy p,
+.care-mode-copy p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.button-secondary {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.hero-visual,
+.feature-image,
+.care-mode-image {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-card,
+.feature-card,
+.care-mode {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+}
+
+.phone-card {
+  border-radius: 38px;
+  padding: 20px;
+}
+
+.phone-card-large {
+  max-width: 420px;
+}
+
+.phone-card img,
+.feature-image img,
+.care-mode-image img {
+  border-radius: 28px;
+}
+
+.features {
+  display: grid;
+  gap: 28px;
+  padding: 16px 0 28px;
+}
+
+.feature-card,
+.care-mode {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 420px);
+  align-items: center;
+  gap: 28px;
+  padding: 28px;
+  border-radius: 34px;
+}
+
+.feature-card-reverse {
+  grid-template-columns: minmax(320px, 420px) minmax(0, 0.9fr);
+}
+
+.feature-card-reverse .feature-copy {
+  order: 2;
+}
+
+.feature-card-reverse .feature-image {
+  order: 1;
+}
+
+.care-mode {
+  margin-top: 18px;
+  background:
+    linear-gradient(135deg, rgba(23, 48, 66, 0.96), rgba(24, 61, 81, 0.96)),
+    var(--brand);
+  color: #fff;
+}
+
+.care-mode .eyebrow {
+  background: rgba(255, 255, 255, 0.12);
+  color: #d7e7ef;
+}
+
+.care-mode-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.care-mode-image img {
+  background: #eef4f6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 36px 0 8px;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .footer,
+  .hero-content,
+  .feature-card,
+  .feature-card-reverse,
+  .care-mode {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
+  }
+
+  .feature-card-reverse .feature-copy,
+  .feature-card-reverse .feature-image {
+    order: unset;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 20px, 100%);
+  }
+
+  .hero-copy h1 {
+    font-size: 2.9rem;
+  }
+
+  .feature-card,
+  .care-mode {
+    padding: 22px;
+    border-radius: 28px;
+  }
+
+  .topbar-links,
+  .footer-links {
+    gap: 12px;
+  }
+}
