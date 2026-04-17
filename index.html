@@ -1,141 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galen UY | Encontrá opciones sin gluten con más claridad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galen</title>
     <meta
       name="description"
-      content="Mapa, reseñas y señales útiles para encontrar locales sin gluten con más confianza."
+      content="Galen te ayuda a descubrir lugares, leer reseñas y revisar reportes con más criterio para decidir mejor dónde comer sin gluten."
     />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta
+      name="googlebot"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#173646" />
+    <meta name="application-name" content="Galen" />
+    <meta name="apple-mobile-web-app-title" content="Galen" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_UY" />
+    <meta property="og:site_name" content="Galen" />
+    <meta property="og:title" content="Galen" />
+    <meta
+      property="og:description"
+      content="Información útil para elegir dónde comer sin gluten con más claridad."
+    />
+    <meta property="og:image" content="assets/hero-iphone.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Galen" />
+    <meta
+      name="twitter:description"
+      content="Información útil para elegir dónde comer sin gluten con más claridad."
+    />
+    <meta name="twitter:image" content="assets/hero-iphone.png" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Galen",
+            "logo": "assets/logo.png",
+            "sameAs": ["https://instagram.com/galen.uy"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Galen",
+            "url": "./",
+            "inLanguage": "es-UY",
+            "description": "Galen te ayuda a descubrir lugares, leer reseñas y revisar reportes con más criterio para decidir mejor dónde comer sin gluten."
+          },
+          {
+            "@type": "MobileApplication",
+            "name": "Galen",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "iOS",
+            "inLanguage": "es-UY",
+            "description": "App para explorar lugares, leer reseñas y revisar reportes con más claridad al decidir dónde comer sin gluten.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "accessibilitySummary": "La experiencia prioriza contenido textual, estructura clara, navegación compatible con lector de pantalla y no depende solo de señales de audio.",
+            "screenshot": [
+              "assets/hero-iphone.png",
+              "assets/app-sensitivity.png",
+              "assets/app-detail.png"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <nav class="topbar">
-          <a class="brand" href="#inicio">
-            <img src="assets/logo.png" alt="Galen UY" />
-          </a>
-          <div class="topbar-links">
-            <a href="#como-funciona">Cómo funciona</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#comunidad">Comunidad</a>
-          </div>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <header class="site-header">
+      <div class="shell nav">
+        <a class="brand" href="index.html" aria-label="Galen inicio">
+          <img class="brand-logo" src="assets/logo.png" alt="Logo de Galen" />
+          <span class="brand-name">Galen</span>
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="support.html">Soporte</a>
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
         </nav>
+        <details class="mobile-nav">
+          <summary aria-label="Abrir menú">
+            <span class="mobile-nav-icon" aria-hidden="true"></span>
+            <span>Menú</span>
+          </summary>
+          <nav class="mobile-nav-panel" aria-label="Principal móvil">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="support.html">Soporte</a>
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+          </nav>
+        </details>
+      </div>
+    </header>
 
-        <section class="hero-content" id="inicio">
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Galen UY</p>
-            <h1>Encontrá opciones sin gluten con más claridad.</h1>
+            <p class="eyebrow">Hecha para decidir mejor en el día a día</p>
+            <h1 id="hero-title">Información útil para elegir dónde comer sin gluten.</h1>
             <p class="hero-text">
-              Desde el mapa hasta las reseñas y tu perfil de sensibilidad, Galen
-              organiza señales clave para ayudarte a elegir con más confianza.
+              Descubrí lugares, leé reseñas y revisá reportes en una app pensada para ayudarte a
+              decidir con más claridad.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://galen.uy">Ver sitio</a>
-              <a class="button button-secondary" href="#como-funciona">Conocer más</a>
+              <a class="button button-primary" href="support.html">Ver soporte</a>
+              <a class="button button-secondary" href="privacy.html">Ver privacidad</a>
             </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="phone-card phone-card-large">
-              <img src="assets/app-map.png" alt="Mapa de locales sin gluten" />
-            </div>
-          </div>
-        </section>
-      </header>
-
-      <main>
-        <section class="features" id="como-funciona">
-          <article class="feature-card">
-            <div class="feature-copy">
-              <span class="feature-tag">MAPA</span>
-              <h2>Explorá locales con señales visuales claras.</h2>
-              <p>
-                Diferenciá tipos de lugares, mirá qué hay en cada zona y abrí el
-                detalle de cada local sin perder contexto.
-              </p>
-            </div>
-            <div class="feature-image">
-              <img src="assets/app-map.png" alt="Vista mapa de Galen" />
-            </div>
-          </article>
-
-          <article class="feature-card feature-card-reverse" id="experiencia">
-            <div class="feature-copy">
-              <span class="feature-tag">PERFIL</span>
-              <h2>Ajustá la experiencia a tu sensibilidad.</h2>
-              <p>
-                Elegí tu nivel de cuidado para leer las reseñas y señales con un
-                contexto más útil para vos.
-              </p>
-            </div>
-            <div class="feature-image">
-              <img
-                src="assets/app-sensitivity.png"
-                alt="Perfil de sensibilidad al gluten"
-              />
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-copy">
-              <span class="feature-tag">DETALLE</span>
-              <h2>Leé reseñas y señales antes de decidir.</h2>
-              <p>
-                Accedé a puntajes, contexto y reportes útiles en una sola vista,
-                con foco en lo que realmente importa al momento de elegir.
-              </p>
-            </div>
-            <div class="feature-image">
-              <img src="assets/app-detail.png" alt="Detalle de local en Galen" />
-            </div>
-          </article>
-
-          <article class="feature-card feature-card-reverse" id="comunidad">
-            <div class="feature-copy">
-              <span class="feature-tag">COMUNIDAD</span>
-              <h2>Construido con aportes reales de la comunidad.</h2>
-              <p>
-                Nuevos locales, reseñas y reportes ayudan a que más personas
-                encuentren opciones con mejores referencias y menos incertidumbre.
-              </p>
-            </div>
-            <div class="feature-image">
-              <img src="assets/app-community.png" alt="Comunidad de Galen" />
-            </div>
-          </article>
-        </section>
-
-        <section class="care-mode">
-          <div class="care-mode-copy">
-            <p class="eyebrow">MODO CUIDADO GALEN</p>
-            <h2>Un filtro pensado para decidir con más criterio, no con más ruido.</h2>
-            <p>
-              Priorizá información útil, referencias confiables y señales más
-              relevantes según el tipo de cuidado que necesitás.
+            <p class="hero-note">
+              La información que ves está previamente validada por nuestro equipo de moderación.
             </p>
           </div>
-          <div class="care-mode-image">
-            <img src="assets/app-care-mode.png" alt="Modo Cuidado Galen" />
-          </div>
-        </section>
-      </main>
 
-      <footer class="footer">
-        <img src="assets/logo.png" alt="Galen UY" class="footer-logo" />
-        <div class="footer-links">
-          <a href="privacy/">Privacidad</a>
-          <a href="terminos/">Términos</a>
+          <div class="hero-device-shell" aria-label="Vista de la app Galen">
+            <div class="hero-device-glow"></div>
+            <div class="hero-device">
+              <img
+                src="assets/hero-iphone.png"
+                alt="Pantalla del mapa de Galen mostrando locales en Montevideo"
+                width="886"
+                height="1920"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="section section-app-showcase" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">La experiencia</p>
+            <h2 id="experience-title">Una app pensada para ver rápido lo importante.</h2>
+            <p>
+              Desde el mapa hasta las reseñas y el perfil de sensibilidad, Galen organiza señales
+              clave para ayudarte a elegir con más claridad.
+            </p>
+          </div>
+
+          <div class="showcase-grid">
+            <article class="showcase-mini-card">
+              <div class="showcase-mini-copy">
+                <span class="showcase-label">Perfil</span>
+                <h3>Ajustá la experiencia a tu sensibilidad.</h3>
+                <p>Configurá tu nivel y ordená mejor la información que ves en la app.</p>
+              </div>
+              <div class="showcase-device showcase-device-mini">
+                <img
+                  src="assets/app-sensitivity.png"
+                  alt="Pantalla de selección de sensibilidad dentro de Galen"
+                  width="768"
+                  height="1152"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="showcase-mini-card">
+              <div class="showcase-mini-copy">
+                <span class="showcase-label">Detalle</span>
+                <h3>Leé reseñas y señales antes de decidir.</h3>
+                <p>Accedé a puntajes, contexto y reportes útiles en una sola vista.</p>
+              </div>
+              <div class="showcase-device showcase-device-detail">
+                <img
+                  src="assets/app-detail.png"
+                  alt="Pantalla de detalle del local con reseñas y puntajes"
+                  width="768"
+                  height="1152"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-spotlight" aria-labelledby="spotlight-title">
+        <div class="shell">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Lo importante</p>
+            <h2 id="spotlight-title">Menos ruido. Más criterio para decidir.</h2>
+          </div>
+
+          <div class="pillars">
+            <article class="pillar-card">
+              <span class="pillar-number">01</span>
+              <h3>Información validada</h3>
+              <p>Lo que ves en la app pasa por validación y moderación antes de ganar visibilidad.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-number">02</span>
+              <h3>Cuidado Galen</h3>
+              <p>Tu nivel de sensibilidad ayuda a ordenar mejor la información que aparece.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-number">03</span>
+              <h3>Utilidad real</h3>
+              <p>Lugares, reseñas y reportes se presentan para ayudarte a elegir con más claridad.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-report-focus" aria-labelledby="report-focus-title">
+        <div class="shell report-focus-grid">
+          <div class="section-heading report-heading">
+            <p class="eyebrow">Reportes</p>
+            <h2 id="report-focus-title">No son ruido extra. Son una capa clave para decidir mejor.</h2>
+            <p>
+              Ayudan a señalar situaciones relevantes, sumar contexto y ordenar mejor la decisión.
+            </p>
+          </div>
+
+          <div class="report-panels">
+            <article class="report-panel">
+              <h3>Se revisan antes de ganar visibilidad</h3>
+              <p>
+                Nuestro equipo de moderación revisa estos aportes antes de hacerlos visibles.
+              </p>
+            </article>
+            <article class="report-panel">
+              <h3>Pueden dar lugar a seguimiento</h3>
+              <p>
+                Cuando corresponde, pueden derivar en revisión interna o contacto con el local.
+              </p>
+            </article>
+            <article class="report-panel">
+              <h3>Aportan contexto accionable</h3>
+              <p>
+                Suman señales concretas para ayudarte a decidir con más información.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="product-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Producto</p>
+            <h2 id="product-title">Una herramienta pensada para elegir mejor.</h2>
+            <p>
+              Galen organiza información útil para evaluar opciones gastronómicas con más claridad.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Explorá lugares</h3>
+              <p>Accedé a fichas de locales, categorías y señales clave para entender mejor cada opción.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Leé reseñas con contexto</h3>
+              <p>Las experiencias se presentan de forma que ayuden a interpretar mejor lo que puede servirte.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Revisá reportes relevantes</h3>
+              <p>Encontrá alertas y observaciones que pueden sumar criterio al momento de decidir.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Guardá y seguí lugares</h3>
+              <p>Tené más a mano las opciones que te interesan y seguí sus cambios con el tiempo.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Recibí actividad importante</h3>
+              <p>La app reúne novedades y avisos relevantes para que no dependas de información dispersa.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Operación con criterio</h3>
+              <p>Hay herramientas internas para validar contenido, ordenar señales y sostener la calidad general de la información.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand-block">
+          <a class="brand brand-footer" href="index.html" aria-label="Galen inicio">
+            <img class="brand-logo" src="assets/logo.png" alt="Logo de Galen" />
+            <span class="brand-name">Galen</span>
+          </a>
+          <p class="footer-copy">Información útil para elegir con más claridad dónde comer sin gluten.</p>
+        </div>
+
+        <div class="footer-meta">
+          <nav class="footer-links" aria-label="Legales">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="support.html">Soporte</a>
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+          </nav>
+          <p class="footer-legal">© 2026 Galen. Todos los derechos reservados. Hecho en Uruguay.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
