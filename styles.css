@@ -526,7 +526,7 @@ h3 {
 .pillars,
 .trust-list,
 .spotlight-grid,
-.report-panels {
+.insight-panels {
   display: grid;
   gap: 1rem;
 }
@@ -544,7 +544,7 @@ h3 {
 }
 
 .spotlight-card,
-.report-panel {
+.insight-panel {
   border: 1px solid rgba(217, 221, 214, 0.92);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -557,12 +557,12 @@ h3 {
 }
 
 .spotlight-card h2,
-.report-heading h2 {
+.insight-heading h2 {
   max-width: 11ch;
 }
 
 .spotlight-card p:last-child,
-.report-panel p:last-child {
+.insight-panel p:last-child {
   margin-bottom: 0;
 }
 
@@ -576,27 +576,27 @@ h3 {
   color: rgba(249, 248, 244, 0.82);
 }
 
-.section-report-focus {
+.section-insight-focus {
   background: linear-gradient(180deg, rgba(24, 55, 70, 0.04), rgba(142, 183, 183, 0.06));
 }
 
-.report-focus-grid {
+.insight-focus-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 1.1rem;
   align-items: start;
 }
 
-.report-heading h2 {
+.insight-heading h2 {
   max-width: 12ch;
 }
 
-.report-panel {
+.insight-panel {
   padding: 1.2rem;
   background: rgba(255, 250, 241, 0.84);
 }
 
-.report-panel h3 {
+.insight-panel h3 {
   margin-bottom: 0.5rem;
 }
 
@@ -727,8 +727,8 @@ h3 {
   .trust-list,
   .legal-shell,
   .spotlight-grid,
-  .report-focus-grid,
-  .report-panels,
+  .insight-focus-grid,
+  .insight-panels,
   .showcase-grid,
   .showcase-mini-card {
     grid-template-columns: 1fr;
