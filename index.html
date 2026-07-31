@@ -6,7 +6,7 @@
     <title>Galen</title>
     <meta
       name="description"
-      content="Galen te ayuda a descubrir lugares, leer reseñas y consultar productos con más criterio para decidir mejor dónde comer sin gluten."
+      content="Galen te ayuda a consultar productos libres de gluten registrados en RUNAEV, descubrir lugares y leer reseñas en Uruguay. Disponible para iPhone y Android."
     />
     <link rel="canonical" href="https://galen.uy/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://galen.uy/sitemap.xml" />
@@ -27,14 +27,14 @@
     <meta property="og:url" content="https://galen.uy/" />
     <meta
       property="og:description"
-      content="Información útil para elegir dónde comer sin gluten con más claridad."
+      content="Productos registrados en RUNAEV, lugares y reseñas para elegir opciones sin gluten con más claridad."
     />
     <meta property="og:image" content="https://galen.uy/assets/hero-iphone.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Galen" />
     <meta
       name="twitter:description"
-      content="Información útil para elegir dónde comer sin gluten con más claridad."
+      content="Productos registrados en RUNAEV, lugares y reseñas para elegir opciones sin gluten con más claridad."
     />
     <meta name="twitter:image" content="https://galen.uy/assets/hero-iphone.png" />
     <link rel="icon" type="image/png" href="assets/logo.png" />
@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -63,15 +63,15 @@
             "name": "Galen",
             "url": "https://galen.uy/",
             "inLanguage": "es-UY",
-            "description": "Galen te ayuda a descubrir lugares, leer reseñas y consultar productos con más criterio para decidir mejor dónde comer sin gluten."
+            "description": "Galen te ayuda a consultar productos libres de gluten registrados en RUNAEV, descubrir lugares y leer reseñas en Uruguay."
           },
           {
             "@type": "MobileApplication",
             "name": "Galen",
             "applicationCategory": "HealthApplication",
-            "operatingSystem": "iOS",
+            "operatingSystem": "iOS, Android",
             "inLanguage": "es-UY",
-            "description": "App para explorar lugares, leer reseñas y consultar productos con más claridad al decidir dónde comer sin gluten.",
+            "description": "App para consultar productos libres de gluten registrados en RUNAEV, explorar lugares y leer reseñas en Uruguay.",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -83,7 +83,11 @@
               "https://galen.uy/assets/app-map.png",
               "https://galen.uy/assets/app-detail.png"
             ],
-            "url": "https://galen.uy/"
+            "url": "https://galen.uy/",
+            "sameAs": [
+              "https://apps.apple.com/uy/app/galen/id6762960046",
+              "https://play.google.com/store/apps/details?id=uy.galen.mobile&hl=es_EC"
+            ]
           }
         ]
       }
@@ -99,6 +103,7 @@
         </a>
         <nav class="nav-links" aria-label="Principal">
           <a href="index.html" aria-current="page">Inicio</a>
+          <a href="#descargar">Descargar</a>
           <a href="support.html">Soporte</a>
           <a href="privacy.html">Privacidad</a>
           <a href="terms.html">Términos</a>
@@ -110,6 +115,7 @@
           </summary>
           <nav class="mobile-nav-panel" aria-label="Principal móvil">
             <a href="index.html" aria-current="page">Inicio</a>
+            <a href="#descargar">Descargar</a>
             <a href="support.html">Soporte</a>
             <a href="privacy.html">Privacidad</a>
             <a href="terms.html">Términos</a>
@@ -129,8 +135,34 @@
               decidir con más claridad.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="support.html">Ver soporte</a>
-              <a class="button button-secondary" href="privacy.html">Ver privacidad</a>
+              <a
+                class="store-badge-link store-badge-link-apple"
+                href="https://apps.apple.com/uy/app/galen/id6762960046"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Descargar Galen en App Store (se abre en una nueva pestaña)"
+              >
+                <img
+                  src="assets/download-on-app-store-es.svg"
+                  alt="Descárgalo en el App Store"
+                  width="144"
+                  height="48"
+                />
+              </a>
+              <a
+                class="store-badge-link store-badge-link-google"
+                href="https://play.google.com/store/apps/details?id=uy.galen.mobile&amp;hl=es_EC"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Descargar Galen en Google Play (se abre en una nueva pestaña)"
+              >
+                <img
+                  src="assets/disponible-google-play-es.png"
+                  alt="Disponible en Google Play"
+                  width="155"
+                  height="60"
+                />
+              </a>
             </div>
             <p class="hero-note">
               La información que ves está previamente validada por nuestro equipo de moderación.
@@ -149,6 +181,55 @@
                 decoding="async"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-download" id="descargar" aria-labelledby="download-title">
+        <div class="shell download-panel">
+          <div class="download-copy">
+            <p class="eyebrow">Descargá Galen</p>
+            <h2 id="download-title">Tu próxima elección empieza acá.</h2>
+            <p>
+              Encontrá productos y lugares sin gluten en Uruguay desde tu celular. Galen está
+              disponible gratis para iPhone y Android.
+            </p>
+            <ul class="download-benefits" aria-label="Beneficios principales">
+              <li>Productos registrados en RUNAEV</li>
+              <li>Lugares, mapa y reseñas de la comunidad</li>
+              <li>Favoritos para volver rápido a lo que te sirve</li>
+            </ul>
+          </div>
+          <div class="download-actions" aria-label="Opciones de descarga">
+            <a
+              class="store-badge-link store-badge-link-apple"
+              href="https://apps.apple.com/uy/app/galen/id6762960046"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Galen en App Store (se abre en una nueva pestaña)"
+            >
+              <img
+                src="assets/download-on-app-store-es.svg"
+                alt="Descárgalo en el App Store"
+                width="144"
+                height="48"
+              />
+            </a>
+            <a
+              class="store-badge-link store-badge-link-google"
+              href="https://play.google.com/store/apps/details?id=uy.galen.mobile&amp;hl=es_EC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Galen en Google Play (se abre en una nueva pestaña)"
+            >
+              <img
+                src="assets/disponible-google-play-es.png"
+                alt="Disponible en Google Play"
+                width="155"
+                height="60"
+              />
+            </a>
+            <p>La disponibilidad puede variar según tu país o dispositivo.</p>
           </div>
         </div>
       </section>
@@ -219,8 +300,8 @@
             </article>
             <article class="pillar-card">
               <span class="pillar-number">02</span>
-              <h3>Productos sin gluten</h3>
-              <p>Consultá productos y señales del catálogo para complementar tus decisiones.</p>
+              <h3>Catálogo RUNAEV</h3>
+              <p>Buscá productos registrados como libres de gluten ante las autoridades uruguayas.</p>
             </article>
             <article class="pillar-card">
               <span class="pillar-number">03</span>
@@ -234,33 +315,49 @@
       <section class="section section-insight-focus" aria-labelledby="insight-focus-title">
         <div class="shell insight-focus-grid">
           <div class="section-heading insight-heading">
-            <p class="eyebrow">Señales</p>
-            <h2 id="insight-focus-title">Información clara para comparar mejor.</h2>
+            <p class="eyebrow">Productos · RUNAEV</p>
+            <h2 id="insight-focus-title">Información oficial, más fácil de consultar.</h2>
             <p>
-              Galen combina datos de lugares, reseñas y productos para que cada decisión tenga más contexto.
+              Galen acerca información pública del Registro Único Nacional de Alimentos, Empresas y
+              Vehículos para ayudarte a consultar productos libres de gluten desde el celular.
             </p>
+            <a
+              class="text-link"
+              href="https://app.runaev.gub.uy/runaev/consultas-publicas/productos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar la fuente oficial RUNAEV <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <div class="insight-panels">
             <article class="insight-panel">
-              <h3>Datos ordenados</h3>
+              <span class="insight-kicker">Buscá</span>
+              <h3>Productos y marcas</h3>
               <p>
-                La información se presenta de forma simple para comparar opciones sin perder tiempo.
+                Encontrá rápido un producto por nombre o marca y revisá su información disponible.
               </p>
             </article>
             <article class="insight-panel">
-              <h3>Contexto de comunidad</h3>
+              <span class="insight-kicker">Verificá</span>
+              <h3>Estado del registro</h3>
               <p>
-                Las reseñas suman experiencias concretas que ayudan a interpretar cada lugar.
+                Consultá el estado informado por RUNAEV antes de decidir una compra.
               </p>
             </article>
             <article class="insight-panel">
-              <h3>Catálogo útil</h3>
+              <span class="insight-kicker">Comunidad</span>
+              <h3>Guardá y compartí contexto</h3>
               <p>
-                Los productos aportan una referencia adicional para resolver compras y salidas.
+                Marcá favoritos y sumá reseñas para que la experiencia también sea útil para otras personas.
               </p>
             </article>
           </div>
+        </div>
+        <div class="shell source-note">
+          <strong>Importante:</strong> Galen facilita la consulta, pero no certifica productos ni
+          reemplaza la información del envase, la fuente oficial o el asesoramiento profesional.
         </div>
       </section>
 
@@ -285,7 +382,7 @@
             </article>
             <article class="feature-card">
               <h3>Consultá productos</h3>
-              <p>Usá el catálogo como referencia para encontrar opciones sin gluten con más claridad.</p>
+              <p>Buscá productos registrados en RUNAEV y revisá su estado desde una experiencia simple.</p>
             </article>
             <article class="feature-card">
               <h3>Guardá y seguí lugares</h3>
@@ -318,6 +415,7 @@
         <div class="footer-meta">
           <nav class="footer-links" aria-label="Legales">
             <a href="index.html" aria-current="page">Inicio</a>
+            <a href="#descargar">Descargar</a>
             <a href="support.html">Soporte</a>
             <a href="privacy.html">Privacidad</a>
             <a href="terms.html">Términos</a>
